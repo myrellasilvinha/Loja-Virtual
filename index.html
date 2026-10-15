@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StyleHub — Moda com Estilo</title>
+  <meta name="description" content="Loja virtual de roupas modernas. Compre camisetas, calças, vestidos e acessórios com frete grátis." />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX'); // ← Coloque seu ID real aqui
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Style<span>Hub</span></a>
+      
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav-link active">Início</a>
+        <a href="#produtos" class="nav-link">Produtos</a>
+        <a href="#categorias" class="nav-link">Categorias</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Abrir carrinho">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/>
+            <path d="M6 6L5 2H2"/>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hero-badge">Nova Coleção 2025</p>
+        <h1>Estilo que <span>define você</span></h1>
+        <p class="hero-desc">Peças modernas, confortáveis e com preços justos. Frete grátis em compras acima de R$ 199.</p>
+        <div class="hero-buttons">
+          <a href="#produtos" class="btn btn-primary">Ver Coleção</a>
+          <a href="#categorias" class="btn btn-outline">Explorar Categorias</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="img/mulher-compras.png" alt="Mulher com roupas modernas" loading="eager" />
+      </div>
+    </div>
+  </section>
+
+  <section class="categories" id="categorias">
+    <div class="container">
+      <h2 class="section-title">Categorias</h2>
+      <div class="categories-grid">
+        <a href="#produtos" class="category-card" data-category="feminino">
+          <img src="img/feminino.png" alt="Moda Feminina" />
+          <div class="category-overlay">
+            <h3>Feminino</h3>
+            <span>Ver produtos →</span>
+          </div>
+        </a>
+        <a href="#produtos" class="category-card" data-category="masculino">
+          <img src="img/masculino.png" alt="Moda Masculina" />
+          <div class="category-overlay">
+            <h3>Masculino</h3>
+            <span>Ver produtos →</span>
+          </div>
+        </a>
+        <a href="#produtos" class="category-card" data-category="acessorios">
+          <img src="img/acessorios.png" alt="Acessórios" />
+          <div class="category-overlay">
+            <h3>Acessórios</h3>
+            <span>Ver produtos →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="products" id="produtos">
+    <div class="container">
+      <div class="products-header">
+        <h2 class="section-title">Nossos Produtos</h2>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="todos">Todos</button>
+          <button class="filter-btn" data-filter="feminino">Feminino</button>
+          <button class="filter-btn" data-filter="masculino">Masculino</button>
+          <button class="filter-btn" data-filter="acessorios">Acessórios</button>
+        </div>
+      </div>
+      <div class="products-grid" id="productsGrid">
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="sobre">
+    <div class="container about-inner">
+      <div class="about-text">
+        <h2>Sobre a StyleHub</h2>
+        <p>Somos uma marca brasileira apaixonada por moda acessível e de qualidade. Cada peça é selecionada pensando no seu conforto e estilo diário.</p>
+        <ul>
+          <li>✓ Frete grátis acima de R$ 199</li>
+          <li>✓ Troca fácil em até 30 dias</li>
+          <li>✓ Pagamento seguro</li>
+          <li>✓ Atendimento humanizado</li>
+        </ul>
+      </div>
+      <div class="about-image">
+        <img src="img/loja.png" alt="Nossa loja" />
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Style<span>Hub</span></a>
+        <p>Moda com personalidade desde 2024.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Links</h4>
+        <a href="#produtos">Produtos</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#sobre">Sobre</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contato</h4>
+        <p>contato@stylehub.demo</p>
+        <p>WhatsApp: (11) 99999-0000</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 StyleHub — Loja demonstrativa. Não realiza vendas reais.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="productModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-body" id="modalBody">
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Seu Carrinho</h3>
+      <button class="cart-close" id="cartClose">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <strong id="cartTotal">R$ 0,00</strong>
+      </div>
+      <button class="btn btn-primary btn-block" id="checkoutBtn">Finalizar Compra</button>
+      <button class="btn btn-outline btn-block" id="clearCartBtn">Limpar Carrinho</button>
+    </div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
